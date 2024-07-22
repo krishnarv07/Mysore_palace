@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Combined Screen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jomhuria:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches:wght@400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #FFFFFF;
+    }
+    .combined-screen {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    .desktop-1 {
+      width: 100%;
+      height: 100%;
+      background: url('SCREEN1/assets/images/firefly_202407020954041.png') no-repeat center center/cover;
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .desktop-1 .city-of-karnataka {
+      font-family: 'Staatliches', sans-serif;
+      font-size: 20px;
+      color: #1E1E1E;
+      background: rgba(255, 255, 255, 0.7);
+      padding: 5px 10px;
+    }
+    .desktop-2 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: last baseline;
+      padding: 20px;
+      box-sizing: border-box;
+      background: #ffffff;
+    }
+    .desktop-2 .cultural-capital-of-karnataka, 
+    .desktop-2 .mysore {
+      font-family: 'Staatliches', sans-serif;
+      font-size: 49px;
+      color: #000000;
+      margin: 10px 0;
+      text-align: center;
+    }
+    .desktop-2 .group-1, 
+    .desktop-2 .group {
+      width: 150px;
+      height: auto;
+      margin: 10px;
+    }
+    .desktop-2 .group {
+      transform: scaleX(-1);
+    }
+    .desktop-2 .images-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+    }
+  </style>
+</head>
+<body>
+  <div class="combined-screen">
+    <!-- Screen 1 Content -->
+    <div class="desktop-1">
+        <div class="container">|</div>
+      <div class="city-of-karnataka">CITY OF KARNATAKA</div>
+    </div>
+    
+    <!-- Screen 2 Content -->
+    <div class="desktop-2">
+      <div class="cultural-capital-of-karnataka">CULTURAL CAPITAL OF KARNATAKA</div>
+      <div class="mysore">“MYSORE”</div>
+      <div class="images-container">
+        <img class="group-1" src="SCREEN1/assets/vectors/group_1_x2.svg" alt="Group 1" />
+        <img class="group" src="SCREEN1/assets/vectors/group_1_x2.svg" alt="Group" />
+      </div>
+    </div>
+  </div>
+</body>
+</html>
